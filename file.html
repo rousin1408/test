@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-darj fixed-top" style="background-color: #696b6b;">
+        <div class="container">
+          <a class="navbar-brand"style="font-size:1.7em" href="index.html">Gerry Guinardi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portofolio">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="jumbotron">
+          <img src="fotodiri.jpg" class="img-fluid mx-auto d-block" alt="...">
+          <p><b style="font-size: 1.9em;">Hi I'am Gerry Guinardi</b><br>I am a student of Binus Malang majoring in computer science <br>I work as a freelance developer.</p>
+          <br>
+          <center>
+              <button>Contact me</button>
+          </center>
+      </section>
+      <section id="portofolio">
+        <center>
+          <h2 style="color: black;"><b>My certificate</b></h2>
+        </center>
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/sertif1.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/sertif2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/sertif3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="contact">
+        <center>
+          <div class="contain">
+            <div class="contact-box">
+              <div class="right">
+                <h2 style="color: white;">Contact Us</h2>
+                <form method="post" action="email.php">
+                <input name="Nama"type="Nama" class="field" placeholder="Your Name" required>
+                <input name="Email"type="Email" class="field" placeholder="Your Email" required>
+                <input name="Nomor_Telepon"type="Nomor_Telepon"onkeyup="validasi()" class="field" placeholder="Phone" required>
+                <textarea name="Pesan"placeholder="Message" class="field"></textarea>
+                <button name="submit"class="btn">Send</button>
+              </form>
+             </div>
+            </div>
+          </div>
+    
+      </center>
+      </section>
+</body>
+<script>
+  let num = [15];
+function validasi(){
+if(num[0]!='0' && num[1]!='8' || num.length>14){
+  alert("salah");
+  return false;
+  }
+}
+</script>
+</html>
+.html
